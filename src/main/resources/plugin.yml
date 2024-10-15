@@ -1,0 +1,15 @@
+name: WildVOID
+version: 0.1
+main: com.lneux.wildvoid.WildVOID
+api-version: 1.20
+commands:
+  rtp:
+    description: Teleports the player to random coordinates with a platform.
+    usage: /<command>
+  wild:
+    description: Teleports the player to random coordinates with a platform.
+    usage: /<command>
+permissions:
+  wildvoid.use:
+    description: Allows the player to use the /rtp and /wild commands.
+    default: true

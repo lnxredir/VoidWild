@@ -1,0 +1,28 @@
+# Cooldown time in seconds
+cooldown: 30
+
+# Material used for the platform
+platform-material: OBSIDIAN
+
+# Radius for random X and Z coordinates
+radius: 5000
+
+# Minimum and maximum Y values for teleportation
+min-y: 30
+max-y: 150
+
+# Minimum distance from spawn for teleportation
+min-distance-from-spawn: 1000
+
+# Spawn coordinates for the world
+spawn-coordinates:
+  x: 0.0
+  y: 64.0
+  z: 0.0
+
+# Messages with color codes (& for colors)
+teleport-message: '&6You have been teleported to random coordinates!'
+cooldown-message: '&cYou must wait before teleporting again.'
+first-time-message: '&aWelcome to the wild!'
+command-usage: '&aYou will be teleported in 3 seconds...'
+only-players-message: '&cOnly players can use this command!'

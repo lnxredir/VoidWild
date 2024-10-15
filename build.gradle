@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lneux.wildvoid'
+version '0.6'
+// sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+}
+
+dependencies {
+    implementation 'io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT' // Replace with your Minecraft version
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    manifest {
+        attributes(
+                'Main-Class': 'com.lneux.wildvoid.WildVOID' // Update to match your main class and package
+        )
+    }
+}
